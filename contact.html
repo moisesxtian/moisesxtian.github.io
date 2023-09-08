@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tails of Manila</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+</head>
+<body>
+    <image src="./assets/close.png" id="close-button" onclick="toggleMenu()"></image>
+    <nav class="nav-bar">
+        <div class="nav-logo">
+            <img src="./assets/tails-of-manila-logo.png" class="img-logo" alt="tails-of-manila-logo">
+            <h1 class="tom"><a href="https://www.facebook.com/tailsofmanila" target="_blank">Tails Of Manila</a></h1>
+        </div>
+        <div class="nav-container-1">
+            <ul class="nav-container">
+                <li><a class="a-nav" href="#">Home</a></li>
+                <li><a class="a-nav" href="#services">Services</a></li>
+                <li><a class="a-nav" href="#about">About</a></li>
+                <li><a class="a-nav" href="#services-2">Location</a></li>
+                <a href="#services-2" id="contact-button"><button class="button-57" role="button"> Contact Us</button></a>
+            </ul>
+        </div>
+        <image src="./assets/hamburger.png" class="hamburger" onclick="toggleMenu()"></image>
+    </nav>
+        <div class="side-nav-container">
+            <div class="text-logo-container"><image src="./assets/text-logo.png" id="text-logo"></image><hr></div>
+            <ul class="side-nav-items">
+                <li id="side-li"><a class="a-nav1" href="#home" onclick="toggleMenu()">Home</a></li>
+                <li id="side-li"><a class="a-nav1" href="#services" onclick="toggleMenu()">Services</a></li>
+                <li id="side-li"><a class="a-nav1" href="#about" onclick="toggleMenu()">About</a></li>
+                <li id="side-li"><a class="a-nav1" href="#location-visit" onclick="toggleMenu()">Location</a></li>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="footer-box-1">
+        <image src="./assets/text-logo.png"class="footer-logo"></image>
+    <ul id="footer-ul-1">
+        <li><p1 id="footer-p1">tailsofmanila@gmail.com</p1></li>
+        <li><div class="icons-container-1">
+            <image src="./assets/fb.png"class="footer-icons"></image>
+            <image src="./assets/tt.png"class="footer-icons"></image>
+            <image src="./assets/ig.png"class="footer-icons"></image></div>
+        </li>
+        <li><p2>© 2023 Petpal. All Rights Reserved</p2></li>
+    </ul>
+    </div>
+    
+    <div class="footer-box-2">
+        <ul id="footer-ul-2">
+            <li><h3 id="footer-p1">Quick Links</h3></li>
+            <a id="footer-b" href="#"><li id="ql-item"><p2>Home</p2></li></a>
+            <a id="footer-b" href="#services"><li id="ql-item"><p2>Services</p2></li><a>
+            <a id="footer-b" href="#services-2"><li id="ql-item"><p2>Location</p2></li></a>
+            <a id="footer-b" href="#services-2"><li id="ql-item"><p2>About Us</p2></li></a>
+        </ul>
+        
+    </div>
+    <div class="footer-box-4">
+        <ul id="footer-ul-4">
+            <li><h3>Schedule</h3></li>
+            <li><p3 id="footer-p1">Wednesday - Monday</p3></li>
+            <li><p3 id="footer-p1">Time:</p3> - <p3 id="footer-p2">9am-7pm</p3></li>
+
+        </ul>
+    </div>
+    <div class="footer-box-3">
+        <ul id="footer-ul-3">
+            <li><h3>Follow Us</h3></li>
+            <a id="footer-a" href="https://www.facebook.com/tailsofmanila" target="_blank"><li id="footer-li-3"><image src="./assets/fb.png"class="footer-icons"></image><p id="footer-p2">Facebook</p></li></a>
+            <a id="footer-a" href="https://www.tiktok.com/@tailsofmanila" target="_blank"><li id="footer-li-3"><image src="./assets/tt.png"class="footer-icons"></image><p id="footer-p2">Tiktok</p></li></a>
+            <a id="footer-a" href="https://www.tiktok.com/@tailsofmanila" target="_blank"><li id="footer-li-3"><image src="./assets/ig.png"class="footer-icons"></image><p id="footer-p2">Instagram</p></li></a>
+        </ul>
+    </div>
+</footer>
+</html>

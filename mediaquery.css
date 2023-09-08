@@ -1,0 +1,79 @@
+@media screen and (max-width: 800px) {
+  *{
+    
+    text-align: center;
+  }
+    .nav-container-1{
+      display: none;
+    }
+
+    .hamburger{
+      display: flex;
+    }
+    .page-2-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .image-1-container{
+      order: -1;
+    }
+
+
+    .location-details{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .location-map{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #map{
+      display:none;
+    }
+    .box-1,.box-2,.box-3{
+      height: 300px;
+      width: 300px;
+    }
+ 
+    #location_text,#contact-info,#socials{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+  
+    .page-2-button{
+      display: flex;
+      justify-content:center;
+      align-items: center;
+    }
+    .text-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+     .location-image-2{
+      width: 100px;
+      border-radius: 20px;
+     }
+     .footer-box-3{
+      display: none;
+     }
+     .footer-box-1,.footer-box-4,.footer-box-2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display:none;
+     }
+     #footer-ul-1,#footer-ul-2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+     }
+
+}
+  
