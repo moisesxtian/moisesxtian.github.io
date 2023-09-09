@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="mediaquery.css" />
 </head>
 <body>
+    <div class="preloader">
+        <h id="loading-text">Loading...</h>
+    </div>
     <nav>
         <div class="nav-bar">
         <div class="nav-logo">
             <img src="./assets/tails-of-manila-logo.png" class="img-logo" alt="tails-of-manila-logo">
-                <h1 ><a href="https://www.facebook.com/tailsofmanila" target="_blank" class="tom">Tails Of Manila</a></h1>
+                <h1 onclick="homePage()" class="tom">Tails Of Manila</h1>
             
         </div>
         <div class="nav-container-1">
@@ -28,7 +31,6 @@
         <image src="./assets/hamburger.png" class="hamburger" onclick="toggleMenu()"></image>
         </div>
     </nav>
-    <div class="preloader"></div>
     <section class="page-1">
             <image src="./assets/text-logo.png" class="text-logo-1"></image>
         

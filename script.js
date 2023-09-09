@@ -12,3 +12,6 @@ function aboutPage(){
 function servicesPage(){
     window.location="services.html"
 }
+function homePage(){
+    window.location="index.html"
+}
