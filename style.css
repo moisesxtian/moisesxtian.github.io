@@ -6,17 +6,19 @@
     font-family: 'Poppins', sans-serif,'Titan One';
     overflow-x: hidden;
   }
+  
 body{
     margin: 0;
     padding: 0;
     color: #2b368c;
 }
 .nav-bar{
+  overflow: hidden;
     background-color: #fbd042;
     display:flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0px -1rem;
+    height: 100px;
 }
 .nav-logo{
     display: inline-flex;
@@ -100,8 +102,11 @@ a:hover:before{
 }
 
 .tom{
+  font-weight: 300;
+  font-family:'Titan One';
   font-size: 30px;
 }
+
 .page-1{
   background-image:url(./assets/tails-of-manila-coveer.jpg);
   background-color: red;
@@ -186,7 +191,7 @@ p{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 2px black solid;
+  border-bottom: 2px rgb(182, 58, 58) solid;
 }
 .page-2-button,#more-button{
   padding:10px;
@@ -195,12 +200,13 @@ p{
   display: flex;
   justify-content: center;
   width: 80px;
-  background-color: red;
+  background-color: white;
   border-radius: 100px;
   border: 0;
-  box-shadow: rgba(1,60,136,.5) 0 -3px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  border: 1px black solid;
+  box-shadow: rgba(1,60,136,.5) 0 -3px 0px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
   box-sizing: border-box;
-  color: #fff;
+  color: #065dd8;
   cursor: pointer;
   display: inherit;
   font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -219,9 +225,13 @@ p{
   vertical-align: baseline;
   transition: all .2s cubic-bezier(.22, .61, .36, 1);
 }
+#more-button{
+  width: 170px;
+  font-size: 17px;
+}
 .page-2-button:hover,#more-button:hover {
   background-color: #065dd8;
-  transform: translateY(-2px);
+  color:white;
 }
 #more-button{
   position:flex;
@@ -258,7 +268,6 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  border: 1px blue solid;
 
 }
 #services,#services-2{
@@ -342,7 +351,6 @@ margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   position: fixed;
   width: 50%;
   height: 100%;
@@ -452,6 +460,10 @@ hr{
   font-size: 20px;
   font-weight: 600;
   overflow: visible;
+}
+.a-nav-selected{
+  font-weight: 600;
+  color: red;
 }
 #side-li{
   width: 100%;
@@ -569,8 +581,89 @@ flex-direction: row;
 #footer-a{
 padding: 5px;
 }
+#footer-b:before{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height:2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: all 0.25s ease;
+}
+#footer-b:hover:before{
+  width: 68%;
+}
 #footer-a{
   padding: 2px;
   }
 
+  /* About Us*/
+  #roof{
+    width: 100%;
+    height: 100px;
+    background-image: url(./assets/roof.png);
+    position: absolute;
+    background-position: 0 100px;
+  }
+  .contact-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:30px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+  #image-2{
+    order: -1;
+    width: 550px;
+    min-width: 300px;
+    border-radius: 20%;
+  }
+  #image-3{
+    display: block;
+    height: 700px;
+    width: auto;
+  }
+.services-container{
+  margin-top: 20px;
+display:flex;
+justify-content: center;
+width: 100%;
+background-color:#d4d4d4;
+}
+  #contact-header-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    max-width: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items:flex-start;
+  }
+  #contact-h1{ 
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  #line-1{
+    background-color: rgb(182, 45, 45);
+    width: 100%;
+    height: 6px;
+    
+    border-radius: 20px
+  }
+  #contact-h1{
+    font-size: 90px;
+    font-family: 'Titan One','Poppins', sans-serif;
+  }
 
+.preloader{
+  background: #f3b558 url(./assets/pre-loader.gif) no-repeat center center;
+  background-size: 30vh;
+  width: 100%;
+  height: 100vh;
+}

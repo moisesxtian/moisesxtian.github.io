@@ -13,21 +13,22 @@
         <div class="nav-bar">
         <div class="nav-logo">
             <img src="./assets/tails-of-manila-logo.png" class="img-logo" alt="tails-of-manila-logo">
-                <h1 class="tom"><a href="https://www.facebook.com/tailsofmanila" target="_blank">Tails Of Manila</a></h1>
+                <h1 ><a href="https://www.facebook.com/tailsofmanila" target="_blank" class="tom">Tails Of Manila</a></h1>
             
         </div>
         <div class="nav-container-1">
             <ul class="nav-container">
-                <li><a class="a-nav" href="#">Home</a></li>
-                <li><a class="a-nav" href="#services">Services</a></li>
-                <li><a class="a-nav" href="#about">About</a></li>
+                <li><a class="a-nav-selected" href="#">Home</a></li>
+                <li><a class="a-nav" href="services.html">Services</a></li>
                 <li><a class="a-nav" href="#services-2">Location</a></li>
+                <li><a class="a-nav" href="about-us.html#about">About</a></li>
                 <a href="#services-2" id="contact-button"><button class="button-57" role="button"> Contact Us</button></a>
             </ul>
         </div>
         <image src="./assets/hamburger.png" class="hamburger" onclick="toggleMenu()"></image>
         </div>
     </nav>
+    <div class="preloader"></div>
     <section class="page-1">
             <image src="./assets/text-logo.png" class="text-logo-1"></image>
         
@@ -42,7 +43,7 @@
                 <p id="description">Welcome to "Purr-fectly Pampered: Unleash the Tails of Manila Grooming Experience," 
                 where feline luxury meets top-notch care! If you want your furry friend to look and feel their absolute best, look no further – 
                 our grooming services are the cat's meow!</p>
-                <button class="page-2-button">About Us</button>
+                <button class="page-2-button" onclick=aboutPage()>About Us</button>
                 </div>
             <div class="image-1-container">
                 <image src="./assets/image-1-outline.png" id="image-1-outline"></image>
@@ -80,7 +81,7 @@
                 </div>
             </div>
 
-            <button id="more-button">See More</button>
+            <button id="more-button" onclick=servicesPage()>More Service</button>
         </div>
     </div>
 
@@ -121,12 +122,14 @@
             <div class="text-logo-container"><image src="./assets/text-logo.png" id="text-logo"></image><hr></div>
             <ul class="side-nav-items">
                 <li id="side-li"><a class="a-nav1" href="#home" onclick="toggleMenu()">Home</a></li>
-                <li id="side-li"><a class="a-nav1" href="#services" onclick="toggleMenu()">Services</a></li>
-                <li id="side-li"><a class="a-nav1" href="#about" onclick="toggleMenu()">About</a></li>
+                <li id="side-li"><a class="a-nav1" href="services.html" onclick="toggleMenu()">Services</a></li>
+                <li id="side-li"><a class="a-nav1" href="about-us.html" onclick="toggleMenu()">About</a></li>
                 <li id="side-li"><a class="a-nav1" href="#location-visit" onclick="toggleMenu()">Location</a></li>
         </div>
     
-    <script src="script.js"></script>
+    <script src="script.js">
+        
+    </script>
 </body>
 <footer>
     <div class="footer-container">
@@ -149,7 +152,7 @@
             <a id="footer-b" href="#"><li id="ql-item"><p2>Home</p2></li></a>
             <a id="footer-b" href="#services"><li id="ql-item"><p2>Services</p2></li><a>
             <a id="footer-b" href="#services-2"><li id="ql-item"><p2>Location</p2></li></a>
-            <a id="footer-b" href="#services-2"><li id="ql-item"><p2>About Us</p2></li></a>
+            <a id="footer-b" href="about-us.html"><li id="ql-item"><p2>About Us</p2></li></a>
         </ul>
         
     </div>
