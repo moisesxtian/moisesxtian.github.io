@@ -17,12 +17,11 @@
         <div class="nav-logo">
             <img src="./assets/tails-of-manila-logo.png" class="img-logo" alt="tails-of-manila-logo">
             <h1 onclick="homePage()" class="tom">Tails Of Manila</h1>
-            
         </div>
         <div class="nav-container-1">
             <ul class="nav-container">
                 <li><a class="a-nav" href="index.html#">Home</a></li>
-                <li><a class="a-nav-selected" href="services.html#">Services</a></li>
+                <li><a class="a-nav" href="services.html">Services</a></li>
                 <li><a class="a-nav" href="index.html#services-2">Location</a></li>
                 <li><a class="a-nav" href="about-us.html">About</a></li>
                 
@@ -33,21 +32,55 @@
         </div>
     </nav>
         <div id="roof"></div>
-
-        <div class="services-container">
-                <image src="./assets/price-list.jpg" id="image-3"></image>
+        <!--  -->
+        <div class="contact-page">
+            <div class="contact-container">
+                <h id="contact-page-text">Contact Us</h>
+                <form action="mail.php" method="POST">
+                    <div class="col-1">
+                        <div class="col-1-row">
+                            Full name
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                        </div>
+                        <div class="col-1-row">
+                            Email Address
+                            <input type="text" class="form-control" name="address" id="address" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="col-2-row">
+                            Subject
+                            <input type="text" class="form-control-2" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="col-3-row">
+                            <textarea class="form-control-3" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-submit" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
+        
+        
         <div class="side-nav-container">
             <image src="./assets/close.png" id="close-button" onclick="toggleMenu()"></image>
             <div class="text-logo-container"><image src="./assets/text-logo.png" id="text-logo"></image><hr></div>
             <ul class="side-nav-items">
-                <li id="side-li"><a class="a-nav1" href="index.html#home" onclick="toggleMenu()">Home</a></li>
+                <li id="side-li"><a class="a-nav1" href="index.html#" onclick="toggleMenu()">Home</a></li>
                 <li id="side-li"><a class="a-nav1" href="services.html" onclick="toggleMenu()">Services</a></li>
                 <li id="side-li"><a class="a-nav1" href="about-us.html" onclick="toggleMenu()">About</a></li>
-                <li id="side-li"><a class="a-nav1" href="index.html#location-visit" onclick="toggleMenu()">Location</a></li>
+                <li id="side-li"><a class="a-nav1" href="index.html#bottom" onclick="toggleMenu()">Location</a></li>
         </div>
-    
+        
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        
+    </script>
 </body>
 <footer>
     <div class="footer-container">
@@ -68,7 +101,7 @@
         <ul id="footer-ul-2">
             <li><h3 id="footer-p1">Quick Links</h3></li>
             <a id="footer-b" href="index.html#"><li id="ql-item"><p2>Home</p2></li></a>
-            <a id="footer-b" href="index.html#services"><li id="ql-item"><p2>Services</p2></li><a>
+            <a id="footer-b" href="services.html"><li id="ql-item"><p2>Services</p2></li><a>
             <a id="footer-b" href="index.html#services-2"><li id="ql-item"><p2>Location</p2></li></a>
             <a id="footer-b" href="about-us.html"><li id="ql-item"><p2>About Us</p2></li></a>
         </ul>
