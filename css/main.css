@@ -90,7 +90,10 @@ body {
   color: black;
   outline: 0;
 }
-
+.more-btn-container{
+  display: flex;
+  justify-content: center;
+}
 
 .btn-white {
   background: transparent;
@@ -467,6 +470,7 @@ h5 {
 .projects-row {
   
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
